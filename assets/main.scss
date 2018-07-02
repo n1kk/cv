@@ -1,0 +1,5 @@
+@import "tw";
+
+@function c($color-name) {
+  @return var(--#{$color-name});
+}

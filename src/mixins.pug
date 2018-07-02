@@ -1,0 +1,24 @@
+- function attr_pick(attrs, mask) { return Object.keys(attrs).filter(function(key){return key.startsWith(mask)}).reduce(function(obj, key) {obj[key.replace(mask,'')] = raw[key];return obj;}, {}) }
+
+mixin h(n)
+  case n
+    when 1
+      h1()&attributes(attributes)
+        block
+    when 2
+      h2()&attributes(attributes)
+        block
+    when 3
+      h3()&attributes(attributes)
+        block
+    when 4
+      h4()&attributes(attributes)
+        block
+    when 5
+      h5()&attributes(attributes)
+        block
+    when 6
+      h6()&attributes(attributes)
+        block
+    default
+      block
