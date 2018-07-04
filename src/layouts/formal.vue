@@ -38,7 +38,11 @@
         +aka(attributes.aka)
 
   article.content-holder
+
     section.header
+      .npm(v-if='flags.npm')
+        .code
+          | $> npm i @n1kk/cv -g && n1kk-cv
       +headline(1, 'user-tie','xs','up-2')
         | {{cv.personal.firstName}} {{cv.personal.lastName}}
       .personal-info
@@ -51,6 +55,7 @@
           v-for='(id, network) in cv.personal.social' :key='network' :class='network')
             +icon('network','lg')(type="fab" bind="true")
               | {{id}}
+
 
     section.highlights(v-if='flags.highlights')
       +headline(2,'bookmark','','down-1')(type="far" aka="Fancy words")
@@ -180,7 +185,10 @@ export default {
     },
     randomIcon() {
       const icons = ['pen','pencil-alt','pen-fancy','pen-alt','wrench','screwdriver','gavel','highlighter','magic','marker','paint-brush','utensil-spoon','syringe','vial',]
-      return icons[Math.random() * icons.length >> 0]
+      let cached = this.cachedRandomIcons || icons.sort(()=> Math.random() > .5)
+      let icon = cached.pop()
+      this.cachedRandomIcons = cached.length ? cached : null
+      return icon
     }
   }
 }
@@ -207,6 +215,7 @@ export default {
     /*font-family: 'Source Sans Pro', sans-serif;*/
     /*font-family: 'Titillium Web', sans-serif;*/
     /*font-family: 'Montserrat', sans-serif;*/
+
 
     font-family: 'Quicksand', sans-serif;
     font-family: 'Lato', sans-serif;
@@ -262,6 +271,21 @@ export default {
           .icon {@extend .mr-1, .text-grey;}
         }
       }
+
+    }
+    .npm {
+      @extend .text-grey-darker, .font-normal;
+      font-family: 'Source Code Pro', sans-serif;
+      font-size: 0.9rem;
+      padding-top: 1.7rem;
+      padding-right: 0.5rem;
+      float: right;
+      @media print {
+
+      }
+      .code {
+        @extend .rounded-lg, .bg-grey-light, .inline, .p-1, .px-3;
+      }
     }
 
     .aka {
@@ -297,7 +321,10 @@ export default {
     }
 
     .highlights {
-      margin-bottom: -1.5rem;
+      margin-bottom: -0.5rem;
+      @media print {
+        margin-top: 1rem;
+      }
       .tag {
         padding: .2rem .5rem;
         font-size: 0.7em;
@@ -317,7 +344,7 @@ export default {
     }
 
     .education {
-      //page-break-after:always;
+      page-break-after:always;
       .education-entry {
         @extend .p-3, .pb-0;
         font-size: 1.2rem;
@@ -455,7 +482,7 @@ export default {
   {
     size: auto;   /* auto is the initial value */
     /* this affects the margin in the printer settings */
-    margin: 20mm 20mm 20mm 20mm;
+    margin: 15mm 20mm 15mm 20mm;
   }
 
   @media print {

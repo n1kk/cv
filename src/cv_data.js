@@ -20,11 +20,10 @@ module.exports = {
   hobbies: [
     "Winter Sports", "Photography", "Canoeng", "Backpacking"
   ],
-  inrto: "I am an ambitious developer with passion for web technologies, apps, games and pretty much everything that you can create by code. My path of experience over last ten years took me through different areas such as web development, design, applications and games, client-server interactions and many more. I am thorough in everything I develop and have a keen interest in user experience and design. I find myself to be a reasonable and competent person who accepts and encourages constructive criticism (we can't all be perfect). While having an occupation in such dynamic and fast evolving field I try to strive for continuous self improvement and education. There's a lot of new amazing stuff being created every day. I am a fast learner and am always looking forward to acquiring new skills and experience.",
+  inrto: "As an ambitious developer I have a passion for web technologies, apps, games and pretty much anything that can be created with code. My path of experience over the last ten years has taken me through different areas such as web development, design, applications, games, client-server interactions and many more. I am thorough in everything that I develop, and have a keen interest in user experience and design. I find myself to be a reasonable and competent person who accepts and encourages constructive criticism (we can't all be perfect). While having an occupation in such a dynamic and fast evolving field I try to strive for continuous self improvement and education. I consider myself to be a fast learner and always eager to acquire new skills and experience.",
   
-  goals: "My interests include everything that is related to internet and computers. I am looking for projects that bring a challenge and allow me to utilize edge cutting tools and technologies. My preferences fall towards working environments that encourage self improvement and always try to keep up to date with current trends in web development world.",
+  goals: "My interests include everything that is related to the internet and computers. I always look for projects that offer a challenge and allow me to utilize cutting edge tools and technologies. My preferences lean towards working environments that encourage self-improvement and keep up-to-date with current trends in the world of web development.",
   
-  outro: "Currently I'm in a complicated love/hate relationship with JavaScript web dev, on one side there are so many things to help you develop amazing things fast, but on the other hand it's just overwhelming, there is endless sea of tools and frameworks that you cannot possibly learn them all, and new ones spring up like mushrooms every day. But still, I love web, I try to do everyting in web. Even this CV is made with web: [github.com/n1kk/cv](http://github.com/n1kk/cv)",
   
   hightlights: [
     "10+ years programming experience", "Self-motivated", "Problem solver", "Excellent communication skills", "Performing under pressure", "Keen eye for user experience", "Troubleshooting", "Creative design", "Other fancy words..."
@@ -50,6 +49,7 @@ module.exports = {
       to: "2010"
     },
   ],
+  
   experience: [
     
     /* SECTOR3 STUDIOS */
@@ -65,12 +65,14 @@ module.exports = {
       ],
       description: "",
       responsibilities: [
-        "Working on and maintaining web related parts of project, such as games portal, online store, companies website, ingame ui elements, various internal apps and tools",
-        "Developing and maintaining game's user interface and UI related parts.",
-        "Creating and maitaining tools and pipelines for workflow optimisation and internal usage."
+        "Working on and maintaining web related parts of the project, such as: games portal, online store, multiple websites, ingame UI elements, various internal apps and tools.",
+        "Developing the games user interface and UI related areas.",
+        "Creating tools and pipelines for workflow optimisation and internal usage.",
+        "Implementing automated regression and end-to-end testing systems.",
+        "Setting up continuous deployment and continuous integration pipelines.",
       ],
       technologies: [
-        "NodeJS", "React", "VueJS", "ES6", "TypeScript", "Electron", "NWJS", "JQuery", "HTML", "CSS", "WebGL", "Shaders", "ActionScript", "C++", "Scaleform", "Lua", "C#", "Python", "Bash"
+        "NodeJS", "React", "VueJS", "ES6", "TypeScript", "Electron", "NWJS", "JQuery", "HTML", "CSS", "ActionScript", "C++", "Scaleform", "Lua", "C#", "Python", "Bash"
       ],
       icon: {name: 'user-astronaut'}
     },
@@ -81,14 +83,15 @@ module.exports = {
       title: "Game Developer",
       from: "07-2012",
       to: "07-2014",
-      location: "Lidkoping, Sweden",
+      location: "Lidkoôping, Sweden",
       projects: [
         {name: "RaceRoom Racing Experience", url: "http://game.raceroom.com/"},
       ],
       description: "",
       responsibilities: [
-        "Developing and maintaining game's user interface and UI related parts.",
-        "Maintaining and creating tools and pipelines for workflow optimisation and internal usage."
+        "Developing the games user interface.",
+        "Designing and prototyping new menu flows and components.",
+        "Creating ui-core-backend communication protocols."
       ],
       technologies: [
         "ActionScript", "C++", "Scaleform", "Lua", "C#", "Python", "Bash", "CMD", "PowerShell"
@@ -105,8 +108,8 @@ module.exports = {
       location: "Kiev, Ukraine",
       description: "",
       responsibilities: [
-        "Designing, prototyping, and developing framework of native Flash IDE CS4 & CS5 components for creating rich interactive web experiences and applications.",
-        "Implementing communication layer between a web page that hosts flash application and a media server."
+        "Designing, prototyping, and developing a framework of native Flash IDE CS4 & CS5 components for creating rich interactive web experiences and applications.",
+        "Implementing a communication layer between a web page that hosts the flash application and the media server."
       ],
       technologies: [
         "JavaScript", "JQuery", "ActionScript", "Flex", "MXML", "JSFL", "HTML", "CSS", "Python"
@@ -126,10 +129,10 @@ module.exports = {
         {name: "NHL 12", url: "https://en.wikipedia.org/wiki/NHL_12"}
       ],
       responsibilities: [
-        "Implementing user interface system and menu elements.",
-        "Maintaining, refactoring and bugfixing legacy code.",
-        "Ensuring UI adheres to Microsoft Xbox and Sony PS3 user interface guidelines and requirements.",
-        "Improving user interaction experience in menu flow.",
+        "Implementing a user interface system and menu elements.",
+        "Maintaining, refactoring, and bugfixing legacy code.",
+        "Ensuring the UI adheres to Microsoft Xbox and Sony PS3 guidelines and requirements.",
+        "Improving user interaction experience in the menu flow.",
       ],
       technologies: [
         "ActionScript", "C++", "CMD"
@@ -139,7 +142,7 @@ module.exports = {
     
     /* Persha Studia */
     {
-      company: "Persha Studia / Nikitova LLC (Wargaming Ukraine)",
+      company: "Wargaming Ukraine (Persha Studia / Nikitova LLC)",
       title: "Game Developer",
       from: "10-2009",
       to: "10-2011",
@@ -151,10 +154,10 @@ module.exports = {
         {name: "Various small games"}
       ],
       responsibilities: [
-        "Programming gameplay in EA Sports Active 2.0",
+        "Programming interactive gameplay for the motion sensor equipped game EA Sports Active 2.0",
         "Developing menu systems and components for EA Sports NHL12",
-        "Developing, refactoring and bugfixing various small casual games",
-        "Extending functionality, supporting, and optimizing older flash games",
+        "Developing, refactoring and bugfixing various small casual games.",
+        "Extending functionality, supporting, and optimizing older flash games.",
       ],
       technologies: [
         "LUA", "ActionScript", "Scaleform", "CMD", "Flex", "MXML"
@@ -174,9 +177,9 @@ module.exports = {
         {name: "moederevo.com"},
       ],
       responsibilities: [
-        "Implementing user relations visual representation tools.",
-        "Developing client-server communication protocol to optimize data transfer size.",
-        "Working with, supporting and refactoring legacy code.",
+        "Creating a system for the visual representation of user connections and relations between each other.",
+        "Developing the client-server communication protocol to optimize data transfer size.",
+        "Designing mechanisms for improving user engagement.",
       ],
       technologies: [
         "JavaScript", "ActionScript", "HTML", "CSS"
@@ -193,8 +196,8 @@ module.exports = {
       location: "Kiev, Ukraine",
       description: "",
       responsibilities: [
-        "Developing several online flash games for online casino.",
-        "Supporting old legacy code and bugfixing in old games.",
+        "Developing several online flash games for an online casino.",
+        "Supporting legacy code and bugfixing in live casino games.",
         "Writing automation scripts and tools.",
       ],
       technologies: [
@@ -215,7 +218,9 @@ module.exports = {
         {name: "Twinity", url: "http://www.twinity.com/"}
       ],
       responsibilities: [
-        "Developing game's user interface system.",
+        "Developing the games user interface system.",
+        "Designing and prototyping components for new features.",
+        "Creating innovative user interaction mechanisms to boost user engagement."
       ],
       technologies: [
         "ActionScript", "Scaleform", "JSFL", "Python"
@@ -232,7 +237,10 @@ module.exports = {
       location: "Kiev, Ukraine",
       description: "",
       responsibilities: [
-        "Developing and maintaining e-commerce store for online retailer zoomy.com.ua",
+        "Developing and maintaining an e-commerce store for the online retailer zoomy.com.ua",
+        "Programming website flow, database interaction and user management.",
+        "Creating the website design and style.",
+        "Designing the company's branding and promotional material.",
       ],
       technologies: [
         "PHP", "HTML", "JavaScript", "CSS", "MySQL", "Photoshop"
@@ -249,7 +257,9 @@ module.exports = {
       location: "Kiev, Ukraine",
       description: "",
       responsibilities: [
-        "Developing various small casual games.",
+        "Developing UI, gameplay, graphical and sound systems for a variety of casual games.",
+        "Collaborating with artists to implement coherent graphical and sound asset management systems and workflows.",
+        "Stress testing the game code to identify underperforming areas and optimising them.",
       ],
       technologies: [
         "Torque2D", "Torque Script"
@@ -264,7 +274,7 @@ module.exports = {
       from: "04-2005",
       to: "11-2007",
       location: "Kiev, Ukraine",
-      description: "Working as a freelancer I took small to medium projects like simple web pages, personal websites, flash animations, games, banners, promotional content, e-commerce skins and themes.",
+      description: "Working as a freelancer I took small to medium sized projects such as: simple web pages, personal websites, flash animations, games, banners, promotional content, e-commerce skins and themes.",
       responsibilities: [
       ],
       technologies: [
@@ -275,10 +285,14 @@ module.exports = {
     
   ],
   
+  outro: "Currently I'm in a complicated love/hate relationship with JavaScript web dev. On one side there's so many tools to help you develop amazing things fast, but on the other side the sheer amount is just overwhelming. There is an endless sea of libraries and frameworks that you cannot possibly learn them all, and new ones spring up like mushrooms every day. But still, I love JS, I try to do everything in JS. Even this CV is made with JS: [github.com/n1kk/cv](http://github.com/n1kk/cv).",
+  
+  
   technologies: [
     "JavaScript", "ECMAScript", "TypeScript", "NodeJS", "Babel", "Webpack", "Rollup",
     "React", "Redux", "Vue", "Vuex", "NuxtJS", "JQuery",
     "HTML", "Pug", "Jade",
+    "WebGL", "Shaders",
     "CSS", "LESS", "SASS", "SCSS", "PostCSS",
     "AS3", "Flash", "Scaleform", "JSFL", "MXML", "Flex",
     "C#", "C++",

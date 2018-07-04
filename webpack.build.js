@@ -66,9 +66,9 @@ if (!arg("test")) {
         waitNetworkIdle: true // defaults to false
       });
       //await page.waitForNavigation({ waitUntil: 'networkidle' })
-      await page.screenshot({path: `pdf/${route}.png`, fullPage: true});
+      await page.screenshot({path: `files/${route}.png`, fullPage: true});
       //await page.emulateMedia('screen');
-      await page.pdf({path: `pdf/${route}.pdf`, printBackground: true});
+      await page.pdf({path: `files/${route}.pdf`, printBackground: true});
       console.log('...Done')
     }
     console.log('All Done')

@@ -1,35 +1,44 @@
 {
-  "name": "cv",
+  "name": "@n1kk/cv",
   "description": "My CV",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "author": "n1kk",
   "license": "MIT",
-  "private": true,
+  "private": false,
+  "git": "https://github.com/n1kk/cv",
+  "main": "dist/term.js",
+  "bin": {
+    "n1kk-cv": "dist/term.js"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "node webpack.build.js",
     "buildOnly": "node webpack.build.js noserver",
     "testBuildServer": "node webpack.build.js test",
-    "tw": "tailwind build tw/tailwind.post.css -c tw/tailwind.config.js -o ./assets/tw.scss"
+    "tw": "tailwind build tw/tailwind.post.css -c tw/tailwind.config.js -o ./assets/tw.scss",
+    "term-dev": "webpack --config webpack.blessed.config.js --progress --hide-modules --watch",
+    "term-run": "nodemon -I --exec \"node dist/term.js\" --watch dist/term.js ",
+    "term-open": "osascript open_term.scpt",
+    "term-build": "webpack --config webpack.blessed.config.js --progress --hide-modules",
+    "pub": "npm publish --access=public"
   },
   "dependencies": {
+    "blessed": "^0.1.81",
+    "blessed-vue": "^2.0.1",
+    "fs-extra": "^6.0.1",
+    "moment": "^2.22.2",
+    "opn": "^5.3.0"
+  },
+  "devDependencies": {
+    "vue-markdown": "^2.2.4",
+    "webpack-node-externals": "^1.7.2",
+    "postcss-extends": "^1.0.0",
+    "jstransformer-markdown-it": "^2.1.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.0",
     "@fortawesome/free-brands-svg-icons": "^5.1.0",
     "@fortawesome/free-regular-svg-icons": "^5.1.0",
     "@fortawesome/free-solid-svg-icons": "^5.1.0",
     "@fortawesome/vue-fontawesome": "^0.1.0",
-    "fs-extra": "^6.0.1",
-    "jstransformer-markdown-it": "^2.1.0",
-    "moment": "^2.22.2",
-    "postcss-extends": "^1.0.0",
-    "vue-markdown": "^2.2.4"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
@@ -40,6 +49,7 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "node-sass": "^4.5.3",
+    "nodemon": "^1.17.5",
     "postcss": "^6.0.23",
     "postcss-import": "^11.1.0",
     "postcss-loader": "^2.1.5",

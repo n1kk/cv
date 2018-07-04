@@ -8,7 +8,7 @@ const resolve = (...paths) => path.resolve(root_dir, ...paths)
 
 module.exports = {
   mode: 'development',
-  entry: './src/vue_main.js',
+  entry: './src/web.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
