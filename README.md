@@ -1,4 +1,4 @@
-This is a project to generate my CV usig javascript tools.
+This is a project to generate my CV using javascript tools.
 
 ## Terminal
 
