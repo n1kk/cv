@@ -55,7 +55,7 @@ module.exports = {
     /* SECTOR3 STUDIOS */
     {
       company: "Sector3 Studios AB",
-      title: "Web / Game Developer",
+      title: "Full-Stack Web Developer",
       from: "07-2014",
       to: "Present",
       location: "Lidkoping, Sweden",
@@ -65,14 +65,14 @@ module.exports = {
       ],
       description: "",
       responsibilities: [
-        "Working on and maintaining web related parts of the project, such as: games portal, online store, multiple websites, ingame UI elements, various internal apps and tools.",
-        "Developing the games user interface and UI related areas.",
-        "Creating tools and pipelines for workflow optimisation and internal usage.",
+        "Working on and maintaining front-end for games portal, online store, multiple websites, ingame UI elements, various internal apps and tools.",
+        "Developing and supporting full stack implementations for several in house tools and projects.",
+        "Creating tools and pipelines for workflow optimisation.",
         "Implementing automated regression and end-to-end testing systems.",
         "Setting up continuous deployment and continuous integration pipelines.",
       ],
       technologies: [
-        "NodeJS", "React", "VueJS", "ES6", "TypeScript", "Electron", "NWJS", "JQuery", "HTML", "CSS", "ActionScript", "C++", "Scaleform", "Lua", "C#", "Python", "Bash"
+        "NodeJS", "React", "VueJS", "ES6", "TypeScript", "Electron", "NWJS", "JQuery", "HTML", "CSS", "MongoDB", "SQLite", "Redis", "WebSocket","Python", "Bash"
       ],
       icon: {name: 'user-astronaut'}
     },
